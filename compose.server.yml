@@ -15,5 +15,5 @@ services:
       options:
         max-size: "100m"
         max-file: "3"
-    stdin_open: true # docker run -i
-    tty: true # docker run -t
+    # stdin_open: true # docker run -i
+    # tty: true # docker run -t
