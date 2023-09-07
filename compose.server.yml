@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  react:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.server
+    # volumes:
+    #   - ./:/app
+    ports:
+      - "80:80"
+      # - "127.0.0.1:80:80"
+    restart: always
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
