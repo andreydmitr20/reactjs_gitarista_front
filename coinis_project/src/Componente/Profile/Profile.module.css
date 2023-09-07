@@ -1,0 +1,302 @@
+.container {
+  height: 100vh;
+}
+
+.containerTwo {
+  width: 70%;
+  margin: 0px auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: rgb(240, 227, 227);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(218, 166, 148, 0.363),
+    rgb(250, 229, 229)
+  );
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileTitle {
+  font-size: 50px;
+  border-bottom: 3px solid black;
+  margin-bottom: 20px;
+}
+.item {
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.titleBig {
+  font-size: 34px;
+}
+
+.songItem {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.8s;
+  transform: scale(0.95);
+}
+
+.realButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.realButtons button {
+  border: 3px solid rgb(180, 3, 3);
+  padding: 5px 10px;
+}
+
+.deleteBtn {
+  background-color: white;
+  color: rgb(180, 3, 3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: 700;
+  margin-top: -40px;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(180, 3, 3);
+  color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+  border: 3px solid white;
+}
+
+.songFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  border: 3px solid black;
+  border-top-left-radius: 47px;
+  border-bottom-left-radius: 47px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 5px;
+  background-color: white;
+}
+
+.songItem:hover {
+  text-decoration: none;
+  /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6); */
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.imgDiv {
+  height: 90px;
+  width: 90px;
+}
+
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.songInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 5px;
+  width: 200px;
+}
+
+.songUpdate {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.songList {
+  margin-top: 50px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 50px; */
+}
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.saveButton {
+  border: 3px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 0px;
+  padding: 7px 40px;
+  font-size: 20px;
+  background-color: lightgreen;
+}
+
+.guideButton {
+  border: 3px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 0px;
+  padding: 7px 40px;
+  font-size: 20px;
+  background-color: lightcoral;
+}
+.guideButton a {
+  text-decoration: none;
+}
+
+.saveButton:hover {
+  background-color: rgb(102, 233, 102);
+  cursor: pointer;
+}
+.guideButton:hover {
+  cursor: pointer;
+
+  background-color: rgb(233, 90, 90);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+}
+.formItem label {
+  font-size: 34px;
+}
+
+.form textarea {
+  width: 100%;
+  margin: 10px auto 0px auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 24px;
+  height: 600px;
+  font-family: "Courier New", Courier, monospace;
+  background-image: linear-gradient(
+    to top,
+    rgba(218, 166, 148, 0.363),
+    rgb(250, 229, 229)
+  );
+}
+
+.startNowBtn {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.startNowBtn a {
+  color: lightcoral;
+}
+
+.startNowBtn a:hover {
+  color: black;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1500px) {
+  .containerTwo {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .containerTwo {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .songItem {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .songItem {
+    width: 100%;
+  }
+  .form textarea {
+    min-width: 100%;
+    font-size: 14px;
+  }
+
+  .item {
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .containerTwo {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form textarea {
+    font-size: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .item {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
+  .buttonDiv {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .profileTitle {
+    font-size: 40px;
+  }
+
+  .formItem label {
+    font-size: 26px;
+  }
+  .titleBig {
+    font-size: 26px;
+  }
+
+  .item {
+    font-size: 18px;
+  }
+  .saveButton,
+  .guideButton {
+    width: 48%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form textarea {
+    font-size: 12px;
+  }
+}

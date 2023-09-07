@@ -1,0 +1,114 @@
+.navbar {
+  width: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 30px;
+  font-size: 24px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(156, 44, 3);
+  color: white;
+  z-index: 10;
+}
+
+.logo {
+  align-self: center;
+}
+
+.navbarItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: inherit;
+}
+
+.item {
+  padding: 20px 20px;
+}
+
+.loginDiv {
+  height: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  align-self: center;
+  color: black;
+  background-color: white;
+}
+
+.loginBtn {
+  font-size: 20px;
+  background-color: inherit;
+  border: none;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  margin-right: 20px;
+}
+
+.loginDiv:hover {
+  background-color: rgb(240, 128, 128);
+  color: white;
+  box-shadow: 0px 0px 0px 2px rgb(255, 255, 255) inset;
+}
+
+#navbarMenu {
+  display: none !important;
+}
+
+.menuButton {
+  background-color: white !important;
+  color: black !important;
+  padding: 10px 13px !important;
+  border: 3px solid white !important;
+  width: 100px;
+}
+
+.menuButton:hover {
+  background-color: white !important;
+}
+
+.menuButton .menuIcon {
+  background-color: white;
+}
+
+.dropdownPart {
+  width: 100%;
+  padding-bottom: 0px !important;
+}
+
+.dropdownPart a {
+  border-bottom: 2px solid black;
+}
+
+.loginDivMenu {
+  height: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  align-self: center;
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+
+  #navbarMenu {
+    display: flex !important;
+    background-color: rgba(156, 44, 3) !important;
+    justify-content: space-between !important;
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 10;
+  }
+
+  .loginDivMenu {
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+}

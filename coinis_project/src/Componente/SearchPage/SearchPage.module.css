@@ -1,0 +1,179 @@
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 50px auto;
+  gap: 30px;
+}
+
+.mainTitle {
+  font-size: 50px;
+}
+
+.mainOptDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainOptOne {
+  padding: 20px 40px;
+  font-size: 24px;
+  border: 3px solid black;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 15px;
+  width: 24%;
+  background-color: white;
+}
+
+.mainOptTwo {
+  padding: 20px 40px;
+  font-size: 24px;
+  border: 3px solid black;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 15px;
+  width: 24%;
+  background-color: white;
+}
+
+.mainOptOne:hover,
+.mainOptTwo:hover {
+  color: white;
+  background-color: lightcoral;
+  border: 3px solid white;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.6);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 3px solid black;
+  align-items: center;
+}
+
+.listName {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.cardFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.songFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+
+.active {
+  color: white;
+  background-color: lightcoral;
+  border: 3px solid white;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.6);
+}
+
+.formFlex {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 48%;
+  margin: 0px auto;
+}
+
+.searchDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.searchBar {
+  width: 95%;
+  font-size: 20px;
+  padding-left: 20px;
+  border: 3px solid black;
+}
+
+.searchBar::placeholder {
+  font-size: 20px;
+}
+
+.searchIcon {
+  height: 50px;
+  width: 50px;
+  border: 3px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: -3px;
+}
+
+.advanceSearchBtn {
+  border: 3px solid black;
+  padding: 0px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.advanceSearchBtn:hover {
+  color: white;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+/* responsive Tablet  */
+
+@media screen and (max-width: 1800px) {
+  .filterContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .filterContainer {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .formFlex {
+    width: 80%;
+  }
+  .mainOptOne,
+  .mainOptTwo {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .formFlex {
+    width: 90%;
+  }
+  .mainOptOne,
+  .mainOptTwo {
+    width: 45%;
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+  .mainTitle {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formFlex {
+    width: 98%;
+  }
+  .mainOptOne,
+  .mainOptTwo {
+    width: 49%;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
